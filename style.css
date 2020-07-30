@@ -40,7 +40,8 @@
 }
 
 .nav-links li a:hover,
-.logo-title:hover {
+.logo-title:hover,
+.toggle-button:hover {
   color: gold;
 }
 
@@ -61,6 +62,7 @@
 }
 
 @media (max-width: 600px) {
+  /* Navigation */
   .toggle-button {
     display: flex;
   }
