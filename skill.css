@@ -90,6 +90,13 @@
   font-size: 0.9rem;
 }
 
+/* Footer */
+footer {
+  background-color: royalblue;
+  color: wheat;
+  text-align: center;
+  padding: 10px;
+}
 /* Media Queries */
 @media (max-width: 600px) {
   /* Navigation Bar */
