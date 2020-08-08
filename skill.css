@@ -41,8 +41,7 @@
 
 .nav-links li a:hover,
 .logo-title:hover,
-.toggle-button:hover,
-.icon-grid a:hover {
+.toggle-button:hover {
   color: gold;
 }
 
@@ -64,13 +63,20 @@
 
 /* Skill section */
 .skill-wrapper {
-  background-color: teal;
+  background: url(./img/adrian-Xft-JdC-Jbc-unsplash.jpg) no-repeat center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   gap: 30px;
-  padding-top: 200px;
+  padding-top: 130px;
+  overflow: hidden;
+}
+
+.skill-wrapper h1 {
+  color: goldenrod;
+  letter-spacing: 2px;
 }
 
 .skill-inter,
@@ -90,15 +96,20 @@
   font-size: 0.9rem;
 }
 
+.skill-inter i:hover,
+.skill-basic i:hover {
+  color: goldenrod;
+}
+
 /* Footer */
 footer {
-  background-color: royalblue;
+  background-color: black;
   color: wheat;
   text-align: center;
   padding: 10px;
 }
 /* Media Queries */
-@media (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   /* Navigation Bar */
   .toggle-button {
     display: flex;
@@ -129,5 +140,17 @@ footer {
 
   .nav-links.active {
     display: flex;
+  }
+
+  /* Skill Section */
+  .skill-inter i,
+  .skill-basic i {
+    padding: 4px 8px;
+    font-size: 3em;
+  }
+
+  .skill-inter h6,
+  .skill-basic h6 {
+    font-size: 0.7em;
   }
 }
